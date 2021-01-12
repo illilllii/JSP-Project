@@ -101,7 +101,7 @@ public class UserDao {
 	}
 
 	public User findByUsernameAndPassword(LoginReqDto dto) {
-		String sql = "SELECT id, username, password, email From user WHERE username = ? AND password = ?";
+		String sql = "SELECT id, username, password, email, userRole From user WHERE username = ? AND password = ?";
 		Connection conn = DB.getConnection();
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
@@ -114,7 +114,7 @@ public class UserDao {
 
 			if (rs.next()) {
 				User user = User.builder().id(rs.getInt("id")).username(rs.getString("username"))
-						.email(rs.getString("email")).build();
+						.email(rs.getString("email")).userRole(rs.getString("userRole")).build();
 				return user;
 			}
 		} catch (Exception e) {

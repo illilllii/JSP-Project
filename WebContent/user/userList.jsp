@@ -26,7 +26,7 @@
 					<td>${user.password}</td>
 					<td>${user.email}</td>
 					<td><c:choose>
-							<c:when test="${sessionScope.principal.username=='admin'}">
+							<c:when test="${sessionScope.principal.userRole=='ADMIN'}">
 								<button onclick="deleteUser(${user.id})" type="button"
 									class="btn btn-danger">삭제</button>
 							</c:when>
