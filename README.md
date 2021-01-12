@@ -152,7 +152,6 @@ public class DB {
 
 ### 필터
 #### 인코딩 필터
-- 인코딩 필터 작성
 
 ```java
 package com.cos.serverproject.config;
@@ -255,6 +254,10 @@ public class ForbiddenUrlConfig implements Filter {
 ##### lucy-xss-servlet-filter 사용
 
 <a>https://github.com/naver/lucy-xss-filter</a>
+
+<p align="center">
+  <img src="./mdImg/xssFilter.png"/>
+</p>
 
 - lucy-xss-servlet-filter-rule.xml
 
