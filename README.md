@@ -148,8 +148,6 @@ public class DB {
   <img src="./mdImg/listDeleteUser.PNG"/>
 </p>
 
-자신의 정보 삭제 시 -> 로그아웃 됨.
-
 ### 필터
 #### 인코딩 필터
 
